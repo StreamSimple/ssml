@@ -12,6 +12,8 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
@@ -205,24 +207,43 @@ public class TimeAnchor
     this.displayName = value;
   }
 
+  @XmlType(name = "TIME-ANCHOR")
+  @XmlEnum
   public enum Type
   {
+    @XmlEnumValue("dateTimeMillisecondsSince[0]")
     DATE_TIME_MILLI_SECONDS_SINCE_0,
+    @XmlEnumValue("dateTimeMillisecondsSince[1960]")
     DATE_TIME_MILLI_SECONDS_SINCE_1960,
+    @XmlEnumValue("dateTimeMillisecondsSince[1970]")
     DATE_TIME_MILLI_SECONDS_SINCE_1970,
+    @XmlEnumValue("dateTimeMillisecondsSince[1980]")
     DATE_TIME_MILLI_SECONDS_SINCE_1980,
+    @XmlEnumValue("dateTimeSecondsSince[0]")
     DATE_TIME_SECONDS_SINCE_0,
+    @XmlEnumValue("dateTimeSecondsSince[1960]")
     DATE_TIME_SECONDS_SINCE_1960,
+    @XmlEnumValue("dateTimeSecondsSince[1970]")
     DATE_TIME_SECONDS_SINCE_1970,
+    @XmlEnumValue("dateTimeSecondsSince[1980]")
     DATE_TIME_SECONDS_SINCE_1980,
+    @XmlEnumValue("dateDaysSince[0]")
     DATE_DAYS_SINCE_0,
+    @XmlEnumValue("dateDaysSince[1960]")
     DATE_DAYS_SINCE_1960,
+    @XmlEnumValue("dateDaysSince[1970]")
     DATE_DAYS_SINCE_1970,
+    @XmlEnumValue("dateDaysSince[1980]")
     DATE_DAYS_SINCE_1980,
+    @XmlEnumValue("dateMonthsSince[0]")
     DATE_MONTHS_SINCE_0,
+    @XmlEnumValue("dateMonthsSince[1960]")
     DATE_MONTHS_SINCE_1960,
+    @XmlEnumValue("dateMonthsSince[1970]")
     DATE_MONTHS_SINCE_1970,
+    @XmlEnumValue("dateMonthsSince[1980]")
     DATE_MONTHS_SINCE_1980,
+    @XmlEnumValue("dateYearsSince[0]")
     DATE_YEARS_SINCE_0
   }
 }

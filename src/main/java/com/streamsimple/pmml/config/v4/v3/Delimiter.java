@@ -11,6 +11,8 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -35,12 +37,10 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "extension"})
+@XmlType(name = "", propOrder = {"extension"})
 @XmlRootElement(name = "Delimiter")
 public class Delimiter
 {
-
   @XmlElement(name = "Extension")
   protected List<Extension> extension;
   @XmlAttribute(name = "delimiter", required = true)
@@ -120,9 +120,13 @@ public class Delimiter
     this.gap = value;
   }
 
+  @XmlType(name = "DELIMITER")
+  @XmlEnum
   public enum Type
   {
+    @XmlEnumValue("sameTimeWindow")
     SAME_TIME_WINDOW,
+    @XmlEnumValue("acrossTimeWindows")
     ACCROSS_TIME_WINDOWS
   }
 }
