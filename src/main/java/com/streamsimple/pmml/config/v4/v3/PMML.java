@@ -5,6 +5,7 @@
 
 package com.streamsimple.pmml.config.v4.v3;
 
+import com.streamsimple.pmml.config.PMMLData;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -50,7 +51,7 @@ import javax.xml.bind.annotation.XmlType;
     "associationModelOrBayesianNetworkModelOrBaselineModel",
     "extension"})
 @XmlRootElement(name = "PMML")
-public class PMML
+public class PMML implements PMMLData
 {
   @XmlElement(name = "Header", required = true)
   protected Header header;
@@ -268,4 +269,9 @@ public class PMML
     this.version = value;
   }
 
+  @Override
+  public PMMLData upgrade()
+  {
+    return null;
+  }
 }

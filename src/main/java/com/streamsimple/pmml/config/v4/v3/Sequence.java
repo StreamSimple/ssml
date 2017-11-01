@@ -56,7 +56,7 @@ public class Sequence
   protected List<Extension> extension;
   @XmlElement(name = "SetReference", required = true)
   protected SetReference setReference;
-  @XmlElements({
+  @XmlElements( {
       @XmlElement(name = "Extension", type = Extension.class),
       @XmlElement(name = "Delimiter", type = Delimiter.class),
       @XmlElement(name = "Time", type = Time.class),

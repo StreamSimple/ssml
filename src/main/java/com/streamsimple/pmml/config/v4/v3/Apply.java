@@ -47,7 +47,7 @@ public class Apply
 {
   @XmlElement(name = "Extension")
   protected List<Extension> extension;
-  @XmlElements({
+  @XmlElements( {
       @XmlElement(name = "Constant", type = Constant.class),
       @XmlElement(name = "FieldRef", type = FieldRef.class),
       @XmlElement(name = "NormContinuous", type = NormContinuous.class),

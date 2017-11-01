@@ -101,7 +101,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GeneralRegressionModel")
 public class GeneralRegressionModel
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "EventValues", namespace = "http://www.dmg.org/PMML-4_3", type = EventValues.class, required = false),
       @XmlElementRef(name = "MiningSchema", namespace = "http://www.dmg.org/PMML-4_3", type = MiningSchema.class, required = false),
       @XmlElementRef(name = "ParamMatrix", namespace = "http://www.dmg.org/PMML-4_3", type = ParamMatrix.class, required = false),

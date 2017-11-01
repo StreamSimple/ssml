@@ -49,7 +49,7 @@ public class VectorFields
 
   @XmlElement(name = "Extension")
   protected List<Extension> extension;
-  @XmlElements({
+  @XmlElements( {
       @XmlElement(name = "FieldRef", type = FieldRef.class),
       @XmlElement(name = "CategoricalPredictor", type = CategoricalPredictor.class)})
   protected List<Object> fieldRefOrCategoricalPredictor;

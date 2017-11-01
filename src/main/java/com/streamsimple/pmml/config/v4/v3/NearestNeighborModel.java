@@ -59,7 +59,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "NearestNeighborModel")
 public class NearestNeighborModel
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "LocalTransformations", namespace = "http://www.dmg.org/PMML-4_3", type = LocalTransformations.class, required = false),
       @XmlElementRef(name = "KNNInputs", namespace = "http://www.dmg.org/PMML-4_3", type = KNNInputs.class, required = false),
       @XmlElementRef(name = "TrainingInstances", namespace = "http://www.dmg.org/PMML-4_3", type = TrainingInstances.class, required = false),

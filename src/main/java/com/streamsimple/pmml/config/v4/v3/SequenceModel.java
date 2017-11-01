@@ -59,7 +59,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SequenceModel")
 public class SequenceModel
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "LocalTransformations", namespace = "http://www.dmg.org/PMML-4_3", type = LocalTransformations.class, required = false),
       @XmlElementRef(name = "ModelStats", namespace = "http://www.dmg.org/PMML-4_3", type = ModelStats.class, required = false),
       @XmlElementRef(name = "MiningSchema", namespace = "http://www.dmg.org/PMML-4_3", type = MiningSchema.class, required = false),

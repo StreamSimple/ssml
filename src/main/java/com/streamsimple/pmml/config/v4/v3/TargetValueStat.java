@@ -40,7 +40,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "TargetValueStat")
 public class TargetValueStat
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "GaussianDistribution", namespace = "http://www.dmg.org/PMML-4_3", type = GaussianDistribution.class, required = false),
       @XmlElementRef(name = "AnyDistribution", namespace = "http://www.dmg.org/PMML-4_3", type = AnyDistribution.class, required = false),
       @XmlElementRef(name = "Extension", namespace = "http://www.dmg.org/PMML-4_3", type = Extension.class, required = false),

@@ -64,7 +64,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SupportVectorMachineModel")
 public class SupportVectorMachineModel
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "VectorDictionary", namespace = "http://www.dmg.org/PMML-4_3", type = VectorDictionary.class, required = false),
       @XmlElementRef(name = "LinearKernelType", namespace = "http://www.dmg.org/PMML-4_3", type = LinearKernelType.class, required = false),
       @XmlElementRef(name = "LocalTransformations", namespace = "http://www.dmg.org/PMML-4_3", type = LocalTransformations.class, required = false),

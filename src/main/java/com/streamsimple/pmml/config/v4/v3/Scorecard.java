@@ -73,7 +73,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "Scorecard")
 public class Scorecard
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "LocalTransformations", namespace = "http://www.dmg.org/PMML-4_3", type = LocalTransformations.class, required = false),
       @XmlElementRef(name = "Characteristics", namespace = "http://www.dmg.org/PMML-4_3", type = Characteristics.class, required = false),
       @XmlElementRef(name = "ModelStats", namespace = "http://www.dmg.org/PMML-4_3", type = ModelStats.class, required = false),

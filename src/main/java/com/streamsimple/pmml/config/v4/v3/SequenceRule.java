@@ -50,7 +50,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SequenceRule")
 public class SequenceRule
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "Extension", namespace = "http://www.dmg.org/PMML-4_3", type = Extension.class, required = false),
       @XmlElementRef(name = "Delimiter", namespace = "http://www.dmg.org/PMML-4_3", type = Delimiter.class, required = false),
       @XmlElementRef(name = "ConsequentSequence", namespace = "http://www.dmg.org/PMML-4_3", type = ConsequentSequence.class, required = false),

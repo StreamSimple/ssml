@@ -56,7 +56,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "TimeSeriesModel")
 public class TimeSeriesModel
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "SeasonalTrendDecomposition", namespace = "http://www.dmg.org/PMML-4_3", type = JAXBElement.class, required = false),
       @XmlElementRef(name = "ExponentialSmoothing", namespace = "http://www.dmg.org/PMML-4_3", type = ExponentialSmoothing.class, required = false),
       @XmlElementRef(name = "TimeSeries", namespace = "http://www.dmg.org/PMML-4_3", type = TimeSeries.class, required = false),

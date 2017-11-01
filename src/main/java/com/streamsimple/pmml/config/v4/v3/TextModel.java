@@ -58,7 +58,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "TextModel")
 public class TextModel
 {
-  @XmlElementRefs({
+  @XmlElementRefs( {
       @XmlElementRef(name = "LocalTransformations", namespace = "http://www.dmg.org/PMML-4_3", type = LocalTransformations.class, required = false),
       @XmlElementRef(name = "TextDictionary", namespace = "http://www.dmg.org/PMML-4_3", type = TextDictionary.class, required = false),
       @XmlElementRef(name = "ModelStats", namespace = "http://www.dmg.org/PMML-4_3", type = ModelStats.class, required = false),

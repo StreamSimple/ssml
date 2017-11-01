@@ -55,7 +55,7 @@ public class RuleSet
   protected List<RuleSelectionMethod> ruleSelectionMethod;
   @XmlElement(name = "ScoreDistribution")
   protected List<ScoreDistribution> scoreDistribution;
-  @XmlElements({
+  @XmlElements( {
       @XmlElement(name = "SimpleRule", type = SimpleRule.class),
       @XmlElement(name = "CompoundRule", type = CompoundRule.class)})
   protected List<Object> rule;

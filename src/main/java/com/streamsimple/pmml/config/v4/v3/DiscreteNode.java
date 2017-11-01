@@ -52,7 +52,7 @@ public class DiscreteNode
   protected List<Extension> extension;
   @XmlElement(name = "DerivedField")
   protected List<DerivedField> derivedField;
-  @XmlElements({
+  @XmlElements( {
       @XmlElement(name = "DiscreteConditionalProbability", type = DiscreteConditionalProbability.class),
       @XmlElement(name = "ValueProbability", type = ValueProbability.class)})
   protected List<Object> discreteConditionalProbabilityOrValueProbability;
