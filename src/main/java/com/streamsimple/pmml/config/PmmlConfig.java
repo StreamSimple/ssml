@@ -44,14 +44,16 @@ public class PmmlConfig
 
   public enum Version
   {
-    V4_3("4.3", com.streamsimple.pmml.config.v4.v3.PMML.class);
+    V4_3("4.3", "schema/pmmlv4v3.xsd", com.streamsimple.pmml.config.v4.v3.PMML.class);
 
     private final String version;
+    private final String xsdPath;
     private final Class configClass;
 
-    Version(final String version, final Class configClass)
+    Version(final String version, final String xsdPath, final Class configClass)
     {
       this.version = Preconditions.checkNotNull(version);
+      this.xsdPath = Preconditions.checkNotNull(xsdPath);
       this.configClass = Preconditions.checkNotNull(configClass);
     }
 
@@ -87,9 +89,9 @@ public class PmmlConfig
       return versionStrings;
     }
 
-    public String getXsdFilePath()
+    public String getXsdPath()
     {
-      return String.format("/schema/pmml-%s.xsd", version);
+      return xsdPath;
     }
   }
 
@@ -153,7 +155,9 @@ public class PmmlConfig
       final Schema schema;
 
       try {
-        schema = factory.newSchema(PmmlConfig.class.getResource(version.getXsdFilePath()));
+        schema = factory.newSchema(PmmlConfig.class
+            .getClassLoader()
+            .getResource(version.getXsdPath()));
       } catch (SAXException e) {
         // This should never happen
         throw new RuntimeException(e);
