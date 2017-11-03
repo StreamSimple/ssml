@@ -60,6 +60,7 @@
   </build>
 
   <modules>
+    <module>ssml-example</module>
     <module>sspmml</module>
   </modules>
 </project>
