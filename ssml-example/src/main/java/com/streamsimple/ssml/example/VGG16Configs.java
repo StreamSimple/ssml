@@ -19,8 +19,12 @@ import org.deeplearning4j.zoo.PretrainedType;
 import org.deeplearning4j.zoo.ZooModel;
 import org.deeplearning4j.zoo.model.VGG16;
 
-public class VGG16Configs
+public final class VGG16Configs
 {
+  private VGG16Configs()
+  {
+  }
+
   public static ReturnError saveToFile(File file)
   {
     try {
@@ -31,6 +35,18 @@ public class VGG16Configs
     } catch (IOException e) {
       final String message = String.format("Failed to retrieve the model weights: %s", e.getMessage());
       return new ReturnErrorImpl(message);
+    }
+  }
+
+  public static Pair<ComputationGraph, ReturnError> loadFromCode()
+  {
+    try {
+      final ZooModel vgg16ZooModel = new VGG16();
+      final ComputationGraph vgg16Model = (ComputationGraph)vgg16ZooModel.initPretrained(PretrainedType.IMAGENET);
+      return Pair.of(vgg16Model, null);
+    } catch (IOException e) {
+      final String message = String.format("Error creating model: %s", e.getMessage());
+      return Pair.of(null, (ReturnError)new ReturnErrorImpl(message));
     }
   }
 

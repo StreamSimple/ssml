@@ -16,7 +16,7 @@ import org.junit.Rule;
 import org.junit.Test;
 
 @Ignore
-public class VGG_16ConfigsTest
+public class VGG16ConfigsTest
 {
   @Rule
   public final DirTestWatcher dirTestWatcher = new DirTestWatcher.Builder()
