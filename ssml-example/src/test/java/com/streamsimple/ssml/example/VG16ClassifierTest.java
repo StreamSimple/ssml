@@ -28,7 +28,7 @@ public class VG16ClassifierTest
   public void classifierTest()
   {
     List<String> filePaths = Lists.newArrayList(
-        //List paths here
+        "/Users/tfarkas/Desktop/Pack-of-wolves.jpg" //List paths here
     );
 
     final Pair<ComputationGraph, ReturnError> result = VGG16Configs.loadFromCode();

@@ -6,21 +6,21 @@
 package com.streamsimple.model.nn.classifier.reader;
 
 import com.google.common.base.Preconditions;
-import com.streamsimple.model.nn.Model;
+import com.streamsimple.model.nn.classifier.ClassifierModel;
 
 public enum ConfigType
 {
   PMML(new PPMLNNClassifierReader()),
   DL4J_0_9_1(new DL4J_0_9_1NNClassifierReader());
 
-  private Model.Reader reader;
+  private ClassifierModel.Reader reader;
 
-  ConfigType(Model.Reader reader)
+  ConfigType(ClassifierModel.Reader reader)
   {
     this.reader = Preconditions.checkNotNull(reader);
   }
 
-  public Model.Reader getReader()
+  public ClassifierModel.Reader getReader()
   {
     return reader;
   }
