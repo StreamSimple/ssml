@@ -3,10 +3,10 @@
  * All rights reserved.
  */
 
-package com.streamsimple.model.nn.reader;
+package com.streamsimple.model.nn.classifier.reader;
 
 import com.google.common.base.Preconditions;
-import com.streamsimple.model.Model;
+import com.streamsimple.model.nn.Model;
 
 public enum ConfigType
 {

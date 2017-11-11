@@ -3,12 +3,13 @@
  * All rights reserved.
  */
 
-package com.streamsimple.model.nn.reader;
+package com.streamsimple.model.nn.classifier.reader;
 
 import com.simplifi.it.javautil.err.ReturnError;
 import com.simplifi.it.javautil.err.ReturnErrorImpl;
-import com.streamsimple.model.Model;
 import com.streamsimple.model.nn.ComputationGraphModel;
+import com.streamsimple.model.nn.Model;
+import com.streamsimple.model.nn.classifier.ClassifierModel;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,7 +21,7 @@ import org.deeplearning4j.util.ModelSerializer;
 public class DL4J_0_9_1NNClassifierReader implements Model.Reader
 {
   @Override
-  public Pair<Model, ReturnError> read(final InputStream inputStream)
+  public Pair<Model, ReturnError> read(final ClassifierModel.Type classifierType, final InputStream inputStream)
   {
     try {
       final ComputationGraph cg = ModelSerializer.restoreComputationGraph(inputStream);

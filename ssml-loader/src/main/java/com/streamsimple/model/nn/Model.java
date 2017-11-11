@@ -3,9 +3,10 @@
  * All rights reserved.
  */
 
-package com.streamsimple.model;
+package com.streamsimple.model.nn;
 
 import com.simplifi.it.javautil.err.ReturnError;
+import com.streamsimple.model.nn.classifier.ClassifierModel;
 
 import java.io.InputStream;
 
@@ -18,6 +19,6 @@ public interface Model
 
   interface Reader
   {
-    Pair<Model, ReturnError> read(InputStream inputStream);
+    Pair<Model, ReturnError> read(ClassifierModel.Type classifierType, InputStream inputStream);
   }
 }
