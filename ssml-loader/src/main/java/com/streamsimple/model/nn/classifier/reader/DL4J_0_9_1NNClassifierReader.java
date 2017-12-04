@@ -5,8 +5,8 @@
 
 package com.streamsimple.model.nn.classifier.reader;
 
-import com.simplifi.it.javautil.err.ReturnError;
-import com.simplifi.it.javautil.err.ReturnErrorImpl;
+import com.streamsimple.javautil.err.ReturnError;
+import com.streamsimple.javautil.err.ReturnErrorImpl;
 import com.streamsimple.model.nn.classifier.ClassifierModel;
 import com.streamsimple.model.nn.classifier.ComputationGraphClassifierModel;
 

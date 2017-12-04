@@ -7,8 +7,8 @@ package com.streamsimple.pmml.config;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
-import com.simplifi.it.javautil.err.ReturnError;
-import com.simplifi.it.javautil.err.ReturnErrorImpl;
+import com.streamsimple.javautil.err.ReturnError;
+import com.streamsimple.javautil.err.ReturnErrorImpl;
 
 import java.io.File;
 import java.io.FileReader;

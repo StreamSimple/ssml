@@ -5,7 +5,7 @@
 
 package com.streamsimple.model.nn.classifier;
 
-import com.simplifi.it.javautil.err.ReturnError;
+import com.streamsimple.javautil.err.ReturnError;
 import java.io.InputStream;
 import org.apache.commons.lang3.tuple.Pair;
 import org.nd4j.linalg.api.ndarray.INDArray;

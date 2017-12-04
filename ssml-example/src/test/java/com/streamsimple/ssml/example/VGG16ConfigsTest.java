@@ -5,8 +5,8 @@
 
 package com.streamsimple.ssml.example;
 
-import com.simplifi.it.javautil.err.ReturnError;
-import com.simplifi.it.javautils.testutils.DirTestWatcher;
+import com.streamsimple.javautil.err.ReturnError;
+import com.streamsimple.javautils.testutils.DirTestWatcher;
 
 import java.io.File;
 

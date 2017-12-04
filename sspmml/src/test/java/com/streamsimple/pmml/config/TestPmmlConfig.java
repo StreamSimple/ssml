@@ -5,8 +5,8 @@
 
 package com.streamsimple.pmml.config;
 
-import com.simplifi.it.javautil.err.ReturnError;
-import com.simplifi.it.javautils.testutils.ResourceUtils;
+import com.streamsimple.javautil.err.ReturnError;
+import com.streamsimple.javautils.testutils.ResourceUtils;
 
 import java.io.File;
 import java.nio.file.Path;

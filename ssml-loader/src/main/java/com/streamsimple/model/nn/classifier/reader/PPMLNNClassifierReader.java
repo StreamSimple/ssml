@@ -5,7 +5,7 @@
 
 package com.streamsimple.model.nn.classifier.reader;
 
-import com.simplifi.it.javautil.err.ReturnError;
+import com.streamsimple.javautil.err.ReturnError;
 import com.streamsimple.model.nn.classifier.ClassifierModel;
 
 import java.io.InputStream;

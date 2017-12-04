@@ -6,7 +6,7 @@
 package com.streamsimple.ssml.example;
 
 import com.google.common.collect.Lists;
-import com.simplifi.it.javautil.err.ReturnError;
+import com.streamsimple.javautil.err.ReturnError;
 
 import java.io.File;
 import java.util.List;

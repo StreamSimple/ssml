@@ -5,7 +5,7 @@
 
 package com.streamsimple.model.nn;
 
-import com.simplifi.it.javautil.err.ReturnError;
+import com.streamsimple.javautil.err.ReturnError;
 
 import java.io.InputStream;
 
