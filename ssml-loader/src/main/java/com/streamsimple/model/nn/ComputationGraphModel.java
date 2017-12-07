@@ -2,7 +2,6 @@
  * Copyright (c) 2017 Simplifi.it, Inc.
  * All rights reserved.
  */
-
 package com.streamsimple.model.nn;
 
 import com.google.common.base.Preconditions;
