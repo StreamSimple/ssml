@@ -1,13 +1,13 @@
-/**
+/*
  * Copyright (c) 2017 Simplifi.it, Inc.
  * All rights reserved.
  */
 package com.streamsimple.model.nn;
 
-import com.google.common.base.Preconditions;
-
 import org.deeplearning4j.nn.graph.ComputationGraph;
 import org.nd4j.linalg.api.ndarray.INDArray;
+
+import com.streamsimple.guava.common.base.Preconditions;
 
 public class ComputationGraphModel implements Model
 {

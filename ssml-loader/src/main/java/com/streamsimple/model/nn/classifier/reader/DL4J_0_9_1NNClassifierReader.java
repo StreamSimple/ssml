@@ -1,20 +1,20 @@
-/**
+/*
  * Copyright (c) 2017 Simplifi.it, Inc.
  * All rights reserved.
  */
 package com.streamsimple.model.nn.classifier.reader;
 
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.deeplearning4j.nn.graph.ComputationGraph;
+import org.deeplearning4j.util.ModelSerializer;
+
+import com.streamsimple.commons.lang3.tuple.Pair;
 import com.streamsimple.javautil.err.ReturnError;
 import com.streamsimple.javautil.err.ReturnErrorImpl;
 import com.streamsimple.model.nn.classifier.ClassifierModel;
 import com.streamsimple.model.nn.classifier.ComputationGraphClassifierModel;
-
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.apache.commons.lang3.tuple.Pair;
-import org.deeplearning4j.nn.graph.ComputationGraph;
-import org.deeplearning4j.util.ModelSerializer;
 
 public class DL4J_0_9_1NNClassifierReader implements ClassifierModel.Reader
 {

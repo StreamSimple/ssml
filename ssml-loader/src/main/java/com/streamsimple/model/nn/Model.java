@@ -1,15 +1,15 @@
-/**
+/*
  * Copyright (c) 2017 Simplifi.it, Inc.
  * All rights reserved.
  */
 package com.streamsimple.model.nn;
 
-import com.streamsimple.javautil.err.ReturnError;
-
 import java.io.InputStream;
 
-import org.apache.commons.lang3.tuple.Pair;
 import org.nd4j.linalg.api.ndarray.INDArray;
+
+import com.streamsimple.commons.lang3.tuple.Pair;
+import com.streamsimple.javautil.err.ReturnError;
 
 public interface Model
 {
