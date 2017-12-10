@@ -20,7 +20,6 @@ package com.streamsimple.ssml.example;
 import java.io.File;
 import java.io.IOException;
 
-import org.datavec.image.loader.NativeImageLoader;
 import org.deeplearning4j.nn.graph.ComputationGraph;
 import org.deeplearning4j.nn.modelimport.keras.trainedmodels.TrainedModels;
 import org.nd4j.linalg.api.ndarray.INDArray;
@@ -28,6 +27,7 @@ import org.nd4j.linalg.dataset.api.preprocessor.DataNormalization;
 import org.nd4j.linalg.dataset.api.preprocessor.VGG16ImagePreProcessor;
 
 import com.streamsimple.commons.lang3.tuple.Pair;
+import com.streamsimple.deeplearning4j.org.datavec.image.loader.NativeImageLoader;
 import com.streamsimple.javautil.err.ReturnError;
 import com.streamsimple.javautil.err.ReturnErrorImpl;
 

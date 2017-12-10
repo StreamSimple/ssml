@@ -4,14 +4,14 @@
 
   <parent>
     <groupId>com.streamsimple</groupId>
-    <artifactId>uber-repo</artifactId>
+    <artifactId>uber-deps</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <groupId>com.streamsimple</groupId>
   <artifactId>ssml</artifactId>
-  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <modules>
     <module>ssml-loader</module>
